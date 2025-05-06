@@ -15,8 +15,6 @@ function render(cteList) {
         tbody.appendChild(cte);
     });
 
-    table.appendChild(tbody);
-
     return table;
 }
 
@@ -63,7 +61,5 @@ function createRow(cte) {
 function makeColumn(name, attribute) {
     return { name, attribute }
 }
-
-
 
 export { render };
