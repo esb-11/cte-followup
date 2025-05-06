@@ -52,6 +52,7 @@ function createRow(cte) {
     COLUMNS.forEach((col) => {
         const td = document.createElement("td");
         td.innerText = cte[col.attribute];
+        td.innerText = cte[col.attribute].replace(".", ",");
 
         tr.appendChild(td);
     });
